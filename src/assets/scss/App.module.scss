@@ -1,0 +1,245 @@
+@import "./module/config";
+
+.homepage {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-family: Poppins;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-family: Karla;
+        font-weight: 600;
+        color: #000000;
+        text-align: center;
+    }
+
+    .box {
+        height: 30px;
+        display: flex;
+        padding: 15px 15px;
+        background-color: $secondary-color;
+        border-radius: 30px;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+        .boxInput {
+            width: 0;
+            outline: none;
+            border: none;
+            font-family: Karla;
+            font-size: 400;
+            color: $tertiary_color;
+            transition: 1s;
+            background: transparent;
+        }
+
+        .boxInput::placeholder {
+            color: $placeholder_color;
+            font-family: Karla;
+            font-size: 400;
+        }
+
+        i {
+            color: $tertiary_color;
+        }
+    }
+
+    .notFound {
+        margin-top: 20px;
+        font-family: Karla;
+        font-weight: 600;
+        font-size: 30px;
+        color: #000000;
+    }
+
+    .container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+}
+
+.loading {
+    font-family: Poppins;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .errorMessage {
+        font-family: Poppins;
+        font-weight: 700;
+        color: #000000;
+        text-align: center;
+    }
+
+    .retryButton {
+        font-family: Karla;
+        font-weight: 600;
+        color: $tertiary_color;
+        border-style: none;
+        border-radius: 15px;
+        background-color: $secondary-color;
+        transition: all 0.2s ease;
+    }
+
+    .retryButton:hover {
+        box-shadow: 0 0 0 4px $primary_color, 0 0 0 8px $secondary-color;
+    }
+
+    .retryButton:active {
+        transform: scale(0.96);
+    }
+}
+
+/*SMARTPHONE*/
+@media only screen and (max-width: 575.98px) {
+    .homepage {
+
+        .logo {
+            width: 70px;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            max-width: 400px;
+        }
+
+        .box:hover {
+            .boxInput {
+                width: 150px;
+            }
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+
+    .loading {
+        font-size: 20px;
+    }
+
+    .errorMessage {
+        font-size: 20px;
+    }
+
+    .retryButton {
+        font-size: 15px;
+        padding: 5px 30px;
+    }
+
+    .notFound {
+        font-size: 15px;
+    }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 576px) and (max-width: 991.98px) {
+    .homepage {
+        .logo {
+            width: 75px;
+        }
+
+        .title {
+            font-size: 45px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            max-width: 500px;
+        }
+
+        .box:hover {
+            .boxInput {
+                width: 200px;
+            }
+        }
+    }
+
+
+    .loading {
+        font-size: 30px;
+    }
+
+    .errorMessage {
+        font-size: 30px;
+    }
+
+    .retryButton {
+        font-size: 20px;
+        padding: 5px 40px;
+    }
+
+    .notFound {
+        font-size: 20px;
+    }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px) {
+    .homepage {
+        .logo {
+            width: 80px;
+        }
+
+        .title {
+            font-size: 50px;
+        }
+
+        .subtitle {
+            font-size: 25px;
+        }
+
+        .box:hover {
+            .boxInput {
+                width: 250px;
+            }
+        }
+    }
+
+    .loading {
+        font-size: 40px;
+    }
+
+    .errorMessage {
+        font-size: 40px;
+    }
+
+    .retryButton {
+        font-size: 25px;
+        padding: 5px 50px;
+    }
+
+    .notFound {
+        font-size: 25px;
+    }
+}

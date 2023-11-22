@@ -1,0 +1,168 @@
+@import "./module/config";
+
+.recipeCard {
+    background-color: $tertiary_color;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+    .healthLabelsButton {
+        font-family: Karla;
+        font-weight: 600;
+        background-color: $secondary-color;
+        color: $tertiary_color;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 10px;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+    }
+
+    .healthLabels {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Karla;
+        font-weight: 400;
+        background-color: $secondary-color;
+        color: $tertiary_color;
+        text-align: center;
+        width: 40%;
+        max-height: 60%;
+        min-height: fit-content;
+        overflow-y: scroll;
+    }
+
+    .healthLabels::-webkit-scrollbar-track {
+        background-color: $secondary-color;
+    }
+
+    .healthLabels::-webkit-scrollbar-thumb {
+        background-color: $primary-color;
+        border-radius: 0;
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: $tertiary_color;
+        cursor: pointer;
+    }
+
+    .recipeImage {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .recipeLabel {
+        font-family: Poppins;
+        font-weight: 700;
+        color: #000000;
+        text-align: center;
+    }
+
+    .recipeSource {
+        text-decoration: none;
+        font-family: Karla;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .recipeSource:hover {
+        color: $secondary-color;
+    }
+
+    .recipeSource:active {
+        color: $primary_color;
+    }
+
+    .recipeKcal {
+        font-family: Karla;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .recipeIngredients {
+        font-family: Karla;
+        font-weight: 600;
+        text-align: center;
+
+        .recipeIngredient {
+            font-family: Karla;
+            font-weight: 400;
+            color: #000000;
+            text-align: start;
+        }
+    }
+}
+
+@media (hover: none) {
+    .recipeSource:hover {
+        color: #000000;
+    }
+}
+
+/*SMARTPHONE*/
+@media only screen and (max-width: 575.98px) {
+    .recipeCard {
+        width: 100%;
+
+        .healthLabelsButton {
+            font-size: 10px;
+        }
+
+        .recipeImage {
+            width: 100px;
+            height: 100px;
+        }
+
+        .recipeLabel {
+            font-size: 20px;
+        }
+    }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 576px) and (max-width: 991.98px) {
+
+    .healthLabelsButton {
+        font-size: 12px;
+    }
+
+    .recipeImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .recipeLabel {
+        font-size: 25px;
+    }
+
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px) {
+
+    .healthLabelsButton {
+        font-size: 14px;
+    }
+
+    .recipeImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .recipeLabel {
+        font-size: 35px;
+    }
+
+}
