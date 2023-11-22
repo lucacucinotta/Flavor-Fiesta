@@ -4,15 +4,18 @@
 ## Table of contents
 
 - [Introduction to Project](#introduction-to-project)
-  - [Project's Purpose](#framework-and-libraries)
+  - [Project's Purpose](#project's-purpose)
 - [Technologies](#technologies)
   - [Framework and libraries](#framework-and-libraries)
 - [Usage](#usage)
+- [Responsiveness](#responsiveness)
 - [Author](#author)
 
 ## Introduction to Project
 
 **Flavor Fiesta** is a webpage where, by entering the name of the recipe or just a keyword, you'll be able to see a series of recipes ready for being cooked.
+
+<div align="center"><img src="src/assets/img/README/homepage.png" width="800px"></div>
 
 ### Project's Purpose
 
@@ -40,7 +43,17 @@ Thanks to this project I was able to put into practice what I studied about Reac
 
 ## Usage
 
-The webpage is really intuitive. At the very least, you can search a recipe by entering the name or just a keyword : then you'll have a series of recipes at your disposal containing various information about them : name, recipe's creator, kcalories, ingredients and, by clicking on the DIET button at the top left, you'll have access to all the diets of wich the recipe is part.
+The webpage is really intuitive. At the very least, you can search a recipe by entering the name or just a keyword. Then you'll have a series of recipes at your disposal containing various information about them : name, recipe's creator, kcalories, ingredients and, by clicking on the DIET button at the top left, you'll have access to all the diets of wich the recipe is part.
+
+<div align="center"><img src="src/assets/img/README/usage.gif"></div>
+
+## Responsiveness
+
+Thanks to the Bootstrap Container Layout and the use of Media Queries, I've manage to take care of the Responsiveness aspect of the website, which adapts perfectly to the change in the size of the device on which it is displayed.
+
+![desktop image](src/assets/img/README/desktop.png)
+
+<div align="center"><img src="src/assets/img/README/smartphone.png"></div>
 
 ## Author
 
