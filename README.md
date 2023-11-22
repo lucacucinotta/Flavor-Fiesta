@@ -1,7 +1,7 @@
 <div align="center"><img src="src/assets/img/logo.svg" width="150px"></div>
 <h1 align="center">Flavor Fiesta</h1>
 <br>
-<p>
+<p align="center">
 Click here to visit the <a href="https://flavorfiestarecipes.netlify.app/"><strong>webpage</strong></a>
 </p>
 
