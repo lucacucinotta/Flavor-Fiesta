@@ -34,8 +34,6 @@
         background-color: $secondary-color;
         color: $tertiary_color;
         text-align: center;
-        width: 40%;
-        max-height: 60%;
         min-height: fit-content;
         overflow-y: scroll;
     }
@@ -120,6 +118,11 @@
             font-size: 10px;
         }
 
+        .healthLabels {
+            width: 90%;
+            max-height: 60%;
+        }
+
         .recipeImage {
             width: 100px;
             height: 100px;
@@ -138,6 +141,11 @@
         font-size: 12px;
     }
 
+    .healthLabels {
+        width: 90%;
+        max-height: 60%;
+    }
+
     .recipeImage {
         width: 150px;
         height: 150px;
@@ -154,6 +162,11 @@
 
     .healthLabelsButton {
         font-size: 14px;
+    }
+
+    .healthLabels {
+        width: 50%;
+        max-height: 60%;
     }
 
     .recipeImage {
